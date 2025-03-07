@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Manu de navegacion</h2>
+        <nav>
+            <ul>
+                <li> <a href="../../index.html"><em>Home</em></a> </li>
+                <li> <a href="acerca.html"><em>Acerca</em></a> </li>
+
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2 class="h2">Contacto</h2>
+            <form class="formulario" method="post">
+                <fieldset>
+                    <legend>Datos personales </legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" required><br>
+
+                <hr>
+                <label for="correo"> Correo electronico</label>
+                <input type="email" id="correo" placeholder="name@gmail.com"  required>
+                <br>
+                <small>Format:name@gmail.com </small>
+                <hr>
+                <label for="contraseña"> Contraseña</label>
+                <input type="password" id="contraseña" minlength="8"  required>
+                <br>
+                <span >La contraseña debe tener al menos 8 caracteres</span>
+                <hr>
+                <label for="confcontraseña"> Confirmar Contraseña</label>
+                <input type="password" id="confcontraseña" minlength="8"  required>
+                <br>
+                <span >La contraseña debe tener al menos 8 caracteres</span>
+                <hr>
+
+                <label for="fnacimiento">Fecha de nacimiento</label>
+                <input type="date" name="" id="fnacimiento" max="2006-03-04" required>
+                <hr>
+                <label for="genero">Genero:</label>
+                <label for="genero">M</label>
+                <input type="radio" name="" id="genero" required>
+                <label for="genero">F</label>
+                <input type="radio" name="" id="genero" required>
+                
+                <hr>
+                <label for="Intereses">Intereses</label>
+                <ul>
+                    <li> Futbol<input type="checkbox" name="" id="Intereses"></li>
+                    <li>Golf <input type="checkbox" name="" id="Intereses"></li>
+                    <li>Voleibol <input type="checkbox" name="" id="Intereses"></li>
+                    <li>Baloncesto <input type="checkbox" name="" id="Intereses"></li>
+                    <li>Natacion <input type="checkbox" name="" id="Intereses"></li>
+                    <li>Ninguna <input type="checkbox" name="" id="Intereses"></li>
+
+                </ul>
+               
+                <hr>
+                <label for="pais">Pais de residencia</label>
+                <select id="pais" name="pais" required>
+                    <option value="">Seleccione su país</option>
+                    <option value="co">Colombia</option>
+                    <option value="mx">México</option>
+                    <option value="es">España</option>
+                </select>
+                <hr>
+                <label for="Biografia"> Biografia</label>
+                <textarea name="Biografia" id=""></textarea>
+                <hr>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <style>
+        .formulario {
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 1rem;
+               }
+              .h2{
+                text-align: center;
+              }
+    </style>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
